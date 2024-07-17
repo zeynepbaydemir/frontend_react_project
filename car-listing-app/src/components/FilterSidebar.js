@@ -156,7 +156,7 @@ const FilterSidebar = () => {
         >
           <Typography variant="h6">Renk</Typography>
         </AccordionSummary>
-        <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
+        <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1, maxHeight: 200, overflowY: 'auto' }}>
           <FormGroup>
             <FormControlLabel control={<Checkbox defaultChecked />} label="Tümü" />
             <FormControlLabel control={<Checkbox />} label="BEYAZ" />
@@ -166,6 +166,18 @@ const FilterSidebar = () => {
             <FormControlLabel control={<Checkbox />} label="BEYAZ(İNCİ)" />
             <FormControlLabel control={<Checkbox />} label="BEYAZ(OPAK)" />
             <FormControlLabel control={<Checkbox />} label="BEYAZ(SEDEF) SİYAH" />
+            <FormControlLabel control={<Checkbox />} label="SİYAH" />
+            <FormControlLabel control={<Checkbox />} label="KIRMIZI" />
+            <FormControlLabel control={<Checkbox />} label="MAVİ" />
+            <FormControlLabel control={<Checkbox />} label="YEŞİL" />
+            <FormControlLabel control={<Checkbox />} label="GRİ" />
+            <FormControlLabel control={<Checkbox />} label="SARI" />
+            <FormControlLabel control={<Checkbox />} label="TURUNCU" />
+            <FormControlLabel control={<Checkbox />} label="PEMBE" />
+            <FormControlLabel control={<Checkbox />} label="MOR" />
+            <FormControlLabel control={<Checkbox />} label="KAHVERENGİ" />
+            <FormControlLabel control={<Checkbox />} label="GÜMÜŞ" />
+            <FormControlLabel control={<Checkbox />} label="ALTIN" />
             {/* Add more colors as needed */}
           </FormGroup>
         </AccordionDetails>

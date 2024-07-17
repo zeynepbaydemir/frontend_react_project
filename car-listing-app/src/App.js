@@ -3,27 +3,28 @@ import { Container, Grid, CssBaseline, Box } from '@mui/material';
 import Navbar from './components/Navbar';
 import FilterSidebar from './components/FilterSidebar';
 import CarList from './components/CarList';
-import Footer from './components/Footer'; // Footer bileşenini içe aktarın
+import Footer from './components/Footer'; // Import Footer component
 
 function App() {
   return (
-    <Box sx={{ minHeight: '100vh', backgroundColor: '#f5f5f5' }}> {/* Kırık beyaz arka plan */}
+    <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#f5f5f5' }}>
       <CssBaseline />
       <Navbar />
-      <Container maxWidth="lg" sx={{ marginTop: 4 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={3}>
-            <FilterSidebar />
+      <Box sx={{ flex: 1, pt: '120px' }}> {/* Adjust pt to ensure sufficient space below Navbar */}
+        <Container maxWidth="lg">
+          <Grid container spacing={2}>
+            <Grid item xs={3}>
+              <FilterSidebar />
+            </Grid>
+            <Grid item xs={9}>
+              <CarList />
+            </Grid>
           </Grid>
-          <Grid item xs={9}>
-            <CarList />
-          </Grid>
-        </Grid>
-      </Container>
-      <Footer /> {/* Footer bileşenini ekleyin */}
+        </Container>
+      </Box>
+      <Footer /> {/* Footer component */}
     </Box>
   );
 }
 
 export default App;
-

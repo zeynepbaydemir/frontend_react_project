@@ -1,19 +1,20 @@
 import React from 'react';
 import { Container, Grid, Typography, Link, Box, Divider } from '@mui/material';
 import { Facebook, Twitter, Instagram } from '@mui/icons-material';
-import store from '../images/appstr.png'; // "../images/logo.png" ile import ediyoruz
+import store from '../images/appstr.png';
 import store1 from '../images/playstr.png';
+import bankLogo1 from '../images/bankLogo1.png';
+import bankLogo2 from '../images/bankLogo2.png';
+import companyLogo from '../images/companyLogo.png';
 
 const Footer = () => {
   return (
     <Box sx={{ bgcolor: '#f0f0f0', p: 4, mt: 'auto' }} component="footer">
       <Container maxWidth="lg">
         <Box display="flex" justifyContent="space-between" alignItems="center" mb={4}>
-          {/* Logo */}
           <Box>
-            <Typography variant="h6">Şirket Adı</Typography> {/* Replace with your logo */}
+            <Typography variant="h6">Şirket Adı</Typography>
           </Box>
-          {/* Social Media Icons */}
           <Box display="flex" gap={2}>
             <Link href="#" color="inherit"><Facebook /></Link>
             <Link href="#" color="inherit"><Twitter /></Link>
@@ -22,9 +23,9 @@ const Footer = () => {
         </Box>
         <Divider sx={{ mb: 4 }} />
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={2}> 
+          <Grid item xs={12} sm={2}>
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-            <Link href="#" variant="subtitle1" color="text.secondary" sx={{ mb: 1 }}>Hakkımızda</Link>
+              <Link href="#" variant="subtitle1" color="text.secondary" sx={{ mb: 1 }}>Hakkımızda</Link>
               <Link href="#" variant="subtitle1" color="text.secondary" sx={{ mb: 1 }}>Bayilerimiz</Link>
               <Link href="#" variant="subtitle1" color="text.secondary" sx={{ mb: 1 }}>Carwizz Bayilik Başvuru Formu</Link>
               <Link href="#" variant="subtitle1" color="text.secondary" sx={{ mb: 1 }}>Ekspertiz Noktalarımız</Link>
@@ -78,8 +79,8 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Divider sx={{ mt: 4 }} />
-        <Box mt={3} textAlign="center">
-          <Box display="flex" alignItems="center" justifyContent="center" gap={2} mb={3}>
+        <Box mt={3}>
+          <Box display="flex" justifyContent="center" gap={2} mb={3}>
             <Typography variant="body1" fontWeight="bold" gutterBottom>
               Mobil Uygulamamızı Denedin mi?
             </Typography>
@@ -92,14 +93,16 @@ const Footer = () => {
             <img src={store1} alt="Store2" style={{ height: 40, marginRight: 20 }} />
           </Box>
           <Divider sx={{ mt: 4 }} />
-          <Box display="flex" justifyContent="center" gap={2} mb={3}>
-            <Link href="#" color="inherit"><Facebook /></Link>
-            <Link href="#" color="inherit"><Twitter /></Link>
-            <Link href="#" color="inherit"><Instagram /></Link>
+          <Box display="flex" justifyContent="space-between" alignItems="center" mt={3} mb={3}>
+            <img src={companyLogo} alt="Company Logo" style={{ height: 40 }} />
+            <Typography variant="body2" color="text.secondary" align="center">
+              © 2024 Şirket Adı. Tüm Hakları Saklıdır.
+            </Typography>
+            <Box display="flex" gap={2}>
+              <img src={bankLogo1} alt="Bank Logo 1" style={{ height: 40 }} />
+              <img src={bankLogo2} alt="Bank Logo 2" style={{ height: 40 }} />
+            </Box>
           </Box>
-          <Typography variant="body2" color="text.secondary">
-            © {new Date().getFullYear()} Şirket Adı. Tüm Hakları Saklıdır.
-          </Typography>
         </Box>
       </Container>
     </Box>
