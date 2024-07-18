@@ -17,7 +17,7 @@ const FilterSidebar = () => {
           expandIcon={<ExpandMoreIcon />} 
           sx={{ backgroundColor: '#f5f5f5', borderRadius: 1, p: 1 }}
         >
-          <Typography variant="h6">Marka</Typography>
+          <Typography variant="h6" sx={{ color: '#536259' }}>Marka</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <FormGroup>
@@ -35,7 +35,7 @@ const FilterSidebar = () => {
           expandIcon={<ExpandMoreIcon />} 
           sx={{ backgroundColor: '#f5f5f5', borderRadius: 1, p: 1 }}
         >
-          <Typography variant="h6">Vites Tipi</Typography>
+          <Typography variant="h6" sx={{ color: '#536259' }}>Vites Tipi</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <FormGroup>
@@ -52,7 +52,7 @@ const FilterSidebar = () => {
           expandIcon={<ExpandMoreIcon />} 
           sx={{ backgroundColor: '#f5f5f5', borderRadius: 1, p: 1 }}
         >
-          <Typography variant="h6">Yakıt Tipi</Typography>
+          <Typography variant="h6" sx={{ color: '#536259' }}>Yakıt Tipi</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <FormGroup>
@@ -70,7 +70,7 @@ const FilterSidebar = () => {
           expandIcon={<ExpandMoreIcon />} 
           sx={{ backgroundColor: '#f5f5f5', borderRadius: 1, p: 1 }}
         >
-          <Typography variant="h6">Fiyat</Typography>
+          <Typography variant="h6" sx={{ color: '#536259' }}>Fiyat</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <Box sx={{ display: 'flex', gap: 1, mb: 2 }}>
@@ -98,7 +98,7 @@ const FilterSidebar = () => {
           expandIcon={<ExpandMoreIcon />} 
           sx={{ backgroundColor: '#f5f5f5', borderRadius: 1, p: 1 }}
         >
-          <Typography variant="h6">Model Yılı</Typography>
+          <Typography variant="h6" sx={{ color: '#536259' }}>Model Yılı</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <Box sx={{ display: 'flex', gap: 1, mb: 2 }}>
@@ -126,7 +126,7 @@ const FilterSidebar = () => {
           expandIcon={<ExpandMoreIcon />} 
           sx={{ backgroundColor: '#f5f5f5', borderRadius: 1, p: 1 }}
         >
-          <Typography variant="h6">KM</Typography>
+          <Typography variant="h6" sx={{ color: '#536259' }}>KM</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <Box sx={{ display: 'flex', gap: 1, mb: 2 }}>
@@ -154,7 +154,7 @@ const FilterSidebar = () => {
           expandIcon={<ExpandMoreIcon />} 
           sx={{ backgroundColor: '#f5f5f5', borderRadius: 1, p: 1 }}
         >
-          <Typography variant="h6">Renk</Typography>
+          <Typography variant="h6" sx={{ color: '#536259' }}>Renk</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1, maxHeight: 200, overflowY: 'auto' }}>
           <FormGroup>
@@ -189,7 +189,7 @@ const FilterSidebar = () => {
           expandIcon={<ExpandMoreIcon />} 
           sx={{ backgroundColor: '#f5f5f5', borderRadius: 1, p: 1 }}
         >
-          <Typography variant="h6">Lokasyon</Typography>
+          <Typography variant="h6" sx={{ color: '#536259' }}>Lokasyon</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <FormGroup>

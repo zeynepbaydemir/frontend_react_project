@@ -10,11 +10,17 @@ const Navbar = () => {
         <Toolbar>
           {/* Logo and Title */}
           <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+          <Divider orientation="vertical" flexItem sx={{ height: '65px', alignSelf: 'stretch', marginRight: 1, marginLeft: -3 }} />
+
             <img src={logo1} alt="Logo" style={{ height: 40, marginRight: 20 }} />
+            <Divider orientation="vertical" flexItem sx={{ height: '65px', alignSelf: 'stretch', marginRight: 1, marginLeft: -1 }} />
+
             <img src={logo2} alt="Logo 2" style={{ height: 40, marginRight: 20 }} />
-            <Typography variant="h6" sx={{ color: '#000000' }}>
+            <Divider orientation="vertical" flexItem sx={{ height: '65px', alignSelf: 'stretch', marginRight: 1, marginLeft: -1 }} />
+
+            {/*<Typography variant="h6" sx={{ color: '#000000' }}>
               Arabam
-            </Typography>
+            </Typography>*/}
           </Box>
 
           {/* Menu Items */}
