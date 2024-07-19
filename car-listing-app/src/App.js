@@ -10,7 +10,7 @@ function App() {
     <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#f5f5f5' }}>
       <CssBaseline />
       <Navbar />
-      <Box sx={{ flex: 1, pt: '80px' }}>
+      <Box sx={{ flex: 1, pt: '80px', pb: '80px' }}> {/* Padding bottom ekleyin */}
         <Container maxWidth="lg" sx={{ mt: 4 }}>
           <Typography variant="body2" sx={{ mb: 2, mt: 2, color: '#6c757d' }}>
             69 Otomobil

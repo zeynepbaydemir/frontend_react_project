@@ -5,6 +5,7 @@ import ViewModuleIcon from '@mui/icons-material/ViewModule';
 import CarCard from './CarCard';
 import car from '../images/reno.jpg';
 import car1 from '../images/ford.jpg';
+import staricon from '@mui/icons-material/Star';
 
 const carData = [
   {
@@ -151,7 +152,7 @@ const CarList = () => {
             </Grid>
             {index < carData.length - 1 && (
               <Grid item xs={12}>
-                <Divider />
+                <Divider sx={{ my: 2 }} />
               </Grid>
             )}
           </React.Fragment>

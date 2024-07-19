@@ -6,6 +6,7 @@ import store1 from '../images/playstr.png';
 import bankLogo1 from '../images/bankLogo1.png';
 import bankLogo2 from '../images/bankLogo2.png';
 import companyLogo from '../images/companyLogo.png';
+import logo3 from '../images/logo3.svg'; 
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
       <Container maxWidth="lg">
         <Box display="flex" justifyContent="space-between" alignItems="center" mb={4}>
           <Box>
-            <Typography variant="h6">Şirket Adı</Typography>
+          <img src={logo3} alt="logo" style={{ height: 40 }} />
           </Box>
           <Box display="flex" gap={2}>
             <Link href="#" color="inherit"><Facebook /></Link>
