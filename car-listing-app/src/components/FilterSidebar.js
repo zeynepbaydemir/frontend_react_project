@@ -1,7 +1,11 @@
 import React from 'react';
 import { Box, Checkbox, FormControlLabel, FormGroup, Typography, TextField, Divider, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+const checkboxStyles={
+  color:'#536259',
+  '&.Mui-checked':{color:'green'},
+  '&.MuiSvgİcon-root':{fontSize:28}
+}
 const FilterSidebar = () => {
   return (
     <Box 
@@ -21,9 +25,9 @@ const FilterSidebar = () => {
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <FormGroup>
-            <FormControlLabel control={<Checkbox defaultChecked />} label="Tümü" />
-            <FormControlLabel control={<Checkbox />} label="Audi" />
-            <FormControlLabel control={<Checkbox />} label="BMW" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} defaultChecked />} label="Tümü" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="Renault" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles}/>} label="Ford" />
             {/* Add more brands as needed */}
           </FormGroup>
         </AccordionDetails>
@@ -39,9 +43,9 @@ const FilterSidebar = () => {
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <FormGroup>
-            <FormControlLabel control={<Checkbox defaultChecked />} label="Tümü" />
-            <FormControlLabel control={<Checkbox />} label="Manuel" />
-            <FormControlLabel control={<Checkbox />} label="Otomatik" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} defaultChecked />} label="Tümü" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="Manuel" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="Otomatik" />
           </FormGroup>
         </AccordionDetails>
       </Accordion>
@@ -56,9 +60,9 @@ const FilterSidebar = () => {
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <FormGroup>
-            <FormControlLabel control={<Checkbox defaultChecked />} label="Tümü" />
-            <FormControlLabel control={<Checkbox />} label="Benzin" />
-            <FormControlLabel control={<Checkbox />} label="Dizel" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} defaultChecked />} label="Tümü" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="Benzin" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="Dizel" />
             {/* Add more fuel types as needed */}
           </FormGroup>
         </AccordionDetails>
@@ -158,26 +162,26 @@ const FilterSidebar = () => {
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1, maxHeight: 200, overflowY: 'auto' }}>
           <FormGroup>
-            <FormControlLabel control={<Checkbox defaultChecked />} label="Tümü" />
-            <FormControlLabel control={<Checkbox />} label="BEYAZ" />
-            <FormControlLabel control={<Checkbox />} label="BEYAZ (İNCİ)" />
-            <FormControlLabel control={<Checkbox />} label="BEYAZ SİYAH" />
-            <FormControlLabel control={<Checkbox />} label="BEYAZ-SİYAH" />
-            <FormControlLabel control={<Checkbox />} label="BEYAZ(İNCİ)" />
-            <FormControlLabel control={<Checkbox />} label="BEYAZ(OPAK)" />
-            <FormControlLabel control={<Checkbox />} label="BEYAZ(SEDEF) SİYAH" />
-            <FormControlLabel control={<Checkbox />} label="SİYAH" />
-            <FormControlLabel control={<Checkbox />} label="KIRMIZI" />
-            <FormControlLabel control={<Checkbox />} label="MAVİ" />
-            <FormControlLabel control={<Checkbox />} label="YEŞİL" />
-            <FormControlLabel control={<Checkbox />} label="GRİ" />
-            <FormControlLabel control={<Checkbox />} label="SARI" />
-            <FormControlLabel control={<Checkbox />} label="TURUNCU" />
-            <FormControlLabel control={<Checkbox />} label="PEMBE" />
-            <FormControlLabel control={<Checkbox />} label="MOR" />
-            <FormControlLabel control={<Checkbox />} label="KAHVERENGİ" />
-            <FormControlLabel control={<Checkbox />} label="GÜMÜŞ" />
-            <FormControlLabel control={<Checkbox />} label="ALTIN" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} defaultChecked />} label="Tümü" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="BEYAZ" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="BEYAZ (İNCİ)" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="BEYAZ SİYAH" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="BEYAZ-SİYAH" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="BEYAZ(İNCİ)" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="BEYAZ(OPAK)" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="BEYAZ(SEDEF) SİYAH" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="SİYAH" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="KIRMIZI" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="MAVİ" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="YEŞİL" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="GRİ" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="SARI" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="TURUNCU" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="PEMBE" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="MOR" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="KAHVERENGİ" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="GÜMÜŞ" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="ALTIN" />
             {/* Add more colors as needed */}
           </FormGroup>
         </AccordionDetails>
@@ -193,9 +197,9 @@ const FilterSidebar = () => {
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: '#f5f5f5', p: 1 }}>
           <FormGroup>
-            <FormControlLabel control={<Checkbox defaultChecked />} label="Tümü" />
-            <FormControlLabel control={<Checkbox />} label="Adana" />
-            <FormControlLabel control={<Checkbox />} label="İstanbul" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} defaultChecked />} label="Tümü" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="Adana" />
+            <FormControlLabel control={<Checkbox sx={checkboxStyles} />} label="İstanbul" />
             {/* Add more locations as needed */}
           </FormGroup>
         </AccordionDetails>
